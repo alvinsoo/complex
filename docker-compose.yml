@@ -16,8 +16,8 @@ services:
       dockerfile: Dockerfile.dev
       context: ./server
     volumes:
-      - /app/node_modules #do not map this folder inside this container
-      - ./server:/app #copy everything from server folder into app
+      - /app/node_modules
+      - ./server:/app 
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -26,7 +26,7 @@ services:
       - PGDATABASE=postgres
       - PGPASSWORD=postgres_password
       - PGPORT=5432 #using default values for some of the postgress env variables
-  client: #react 
+  client:
     build:
       dockerfile: Dockerfile.dev
       context: ./client #source code for client services
