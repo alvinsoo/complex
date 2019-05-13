@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\client",
-    "\\client\\src",
-    "\\nginx"
+    ""
   ],
-  "SelectedNode": "\\client\\src\\App.test.js",
+  "SelectedNode": "\\.travis.yml",
   "PreviewInSolutionExplorer": false
 }
